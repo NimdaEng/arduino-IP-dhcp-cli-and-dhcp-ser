@@ -8,11 +8,11 @@ pin 13  SCK
 pin 12  SO
 pin 11  SI
 pin 10  CS
-#define OLED_MOSI   2   //
-#define OLED_CLK    3   //
-#define OLED_DC     4   //
-#define OLED_CS     5   //
-#define OLED_RESET  6   //
+#define OLED_MOSI   2   //D1
+#define OLED_CLK    3   //D0
+#define OLED_DC     4   //DC
+#define OLED_CS     5   //DS
+#define OLED_RESET  6   //RES
  */
 
 
@@ -28,11 +28,11 @@ pin 10  CS
 #include <Wire.h>
 #endif
 
-#define OLED_MOSI   2   //
-#define OLED_CLK    3   //
-#define OLED_DC     4   //
-#define OLED_CS     5   //
-#define OLED_RESET  6   //
+#define OLED_MOSI   2   //D1
+#define OLED_CLK    3   //D0
+#define OLED_DC     4   //DC
+#define OLED_CS     5   //DS
+#define OLED_RESET  6   //RES
 //U8G2_SSD1306_128X64_NONAME_1_4W_SW_SPI u8g2(U8G2_R0, /* clock=*/ OLED_CLK, /* data=*/ OLED_MOSI, /* cs=*/ OLED_CS, /* dc=*/ OLED_DC, /* reset=*/ OLED_RESET);
 #ifdef U8X8_HAVE_HW_SPI
 U8X8_SSD1306_128X64_NONAME_4W_SW_SPI u8x8(/* clock=*/ OLED_CLK, /* data=*/ OLED_MOSI, /* cs=*/ OLED_CS, /* dc=*/ OLED_DC, /* reset=*/ OLED_RESET);
